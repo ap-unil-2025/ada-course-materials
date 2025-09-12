@@ -410,6 +410,21 @@ tr:hover {
   opacity: 0.8;
 }
 
+.site-footer .license {
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.site-footer .license a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+}
+
+.site-footer .license a:hover {
+  color: var(--primary-color);
+}
+
 .card {
   background-color: var(--background-color);
   border: 1px solid var(--border-color);
