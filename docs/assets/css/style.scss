@@ -207,7 +207,7 @@ body {
 }
 
 .site-title {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1.25rem;
@@ -215,6 +215,7 @@ body {
   color: var(--primary-color);
   text-decoration: none;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .site-title:hover {
@@ -239,7 +240,9 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .nav-links a {
