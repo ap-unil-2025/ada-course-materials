@@ -1,12 +1,14 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
-    <a class="site-title" href="{{ '/' | relative_url }}" aria-label="Homepage">
-        <img src="{{ '/assets/images/unil.jpeg' | relative_url }}" alt="UNIL Logo" class="site-logo">
-        <span class="site-title-text">ADA</span>
-    </a>
-    
-    <a href="https://app.nuvolos.cloud/enroll/class/sBsa1T_Mm5Y" target="_blank" class="nuvolos-logo-link" aria-label="Enroll in Nuvolos">
-        <img src="{{ '/assets/images/nuvolos_logo_small.svg' | relative_url }}" alt="Nuvolos" class="nuvolos-logo">
-    </a>
+    <div class="site-branding">
+        <a class="site-title" href="{{ '/' | relative_url }}" aria-label="Homepage">
+            <img src="{{ '/assets/images/unil.jpeg' | relative_url }}" alt="UNIL Logo" class="site-logo">
+            <span class="site-title-text">ADA</span>
+        </a>
+        <a href="https://nuvolos.cloud" target="_blank" rel="noopener noreferrer" class="powered-by-header" aria-label="Powered by Nuvolos">
+            <span class="powered-text">Powered by</span>
+            <img src="{{ '/assets/images/nuvolos_logo.svg' | relative_url }}" alt="Nuvolos" class="header-nuvolos-logo">
+        </a>
+    </div>
     
     <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span class="hamburger"></span>
