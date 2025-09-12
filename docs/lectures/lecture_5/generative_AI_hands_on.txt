@@ -1,4 +1,0 @@
-**Week 5 (Oct 13): Special Session: Generative AI** 
-[Lecture slides, week 5]  
-- Hands-on: Large Language Models & Autonomous agents 
-- Led by Anna Smirnova 

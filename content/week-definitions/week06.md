@@ -1,49 +1,75 @@
 ---
-title: "Week 6: Python Fundamentals III"
+title: "Week 6: Classification"
 date: 2025-10-20
-description: "Object-oriented programming, classes, inheritance, and program efficiency"
-lecture_slides:
-  - title: "Testing and Debugging (Productivity)"
-    link: "/course-materials/lectures/lecture_6/slides/Advanced_Programming_2025_lecture_6a.pdf"
-  - title: "Object Oriented Programming"
-    link: "/course-materials/lectures/lecture_6/slides/Advanced_Programming_2025_lecture_6b.pdf"
-  - title: "Classes, Inheritance & Program Efficiency"
-    link: "/course-materials/lectures/lecture_6/slides/Advanced_Programming_2025_lecture_6c.pdf"
-ta_slides: "/course-materials/slides/practice/week06_slides.html"
-lesson: "/course-materials/lessons/week06-lesson.html"
+description: "Supervised Learning: Classification, k-NN, Decision Trees, Exercise 3 distributed"
+lecture_slides: 
+  - title: "Lecture slides, week 6"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_6/slides/Advanced_Data_Analytics_2025_lecture_6.pdf"
+ta_slides: 
+  - title: "Discussion of the previous exercises; Finger exercises (with TA)"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_6/Finger_exercises/finger_exercises_lecture_6.pdf"
 assignment:
-  title: "OOP Assignment"
-  link: "#"
-  description: "Practice with classes, inheritance, and object-oriented design"
+  title: "Exercise 3"
+  link: "/ada-course-materials/advanced_data_analytics_2025/exercises/Exercise_3/Problem_set_3.pdf"
+  description: "Distribution of Exercise sheet 3"
 examples:
-  - title: "Debugging Notebook"
-    link: "/course-materials/lectures/lecture_6/demo/debugging.ipynb"
-  - title: "OOP Examples"
-    link: "https://github.com/sischei/advanced_programming_2025/tree/main/lectures/lecture_6/demo"
-  - title: "NumPy Introduction"
-    link: "/course-materials/lectures/lecture_6/demo/numpy.ipynb"
-  - title: "Scientific Computing Overview"
-    link: "/course-materials/lectures/lecture_6/demo/scientific_computing_in_python.ipynb"
+  - title: "Introduction to matplotlib (if time permits)"
+    link: "/ada-course-materials/advanced_data_analytics_2025/python_refresher/python_basics_11_basic_plotting.ipynb"
+  - title: "Multiple Demo Files"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_6/demo/"
 references:
-  - title: "Python OOP Documentation"
-    link: "https://docs.python.org/3/tutorial/classes.html"
-    description: "Official Python classes tutorial"
-  - title: "Testing in Python"
-    link: "https://docs.pytest.org/"
-    description: "pytest documentation"
+  - title: "Finger Exercises"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_6/Finger_exercises/finger_exercises_lecture_6.pdf"
+    description: "Discussion of the previous exercises; Finger exercises (with TA)"
 ---
 
-## Week 6: Python Fundamentals III
+## Week 6: Classification
+
+### Learning Objectives
+- Understand fundamental classification concepts and algorithms
+- Master k-Nearest Neighbors (k-NN) algorithm
+- Learn how to evaluate classifier performance
+- Understand Naive Bayes classification
+- Explore decision trees and ensemble methods
+- Apply classification algorithms to real-world datasets
 
 ### Topics Covered
-- Selected Topics on Object Oriented Programming
-- Selected Topics on Python Classes and Inheritance
-- Basics on Program Efficiency
-- A preview on Libraries (take-home materials)
-- Productivity: Basics on Testing and Debugging
+- **Classification Fundamentals**: Problem formulation and terminology
+- **k-Nearest Neighbors (k-NN)**: Instance-based learning algorithm
+- **Classifier Evaluation**: Accuracy, precision, recall, F1-score, confusion matrices
+- **Naive Bayes**: Probabilistic classification based on Bayes' theorem
+- **Decision Trees**: Tree-based classification and feature selection
+- **Ensemble Methods**: Boosting and Bagging for improved performance
+- **Practical Applications**: Introduction to matplotlib (if time permits)
 
-### Code Examples
-This week includes practical examples of OOP concepts, debugging techniques, and an introduction to scientific computing libraries.
+### Schedule
+- **Lecture**: Monday, October 20, 2025 (10:15 - 12:00)
+- **Practice Session**: Monday, October 20, 2025 (16:30 - 18:00)
+- **TA Session**: Discussion of exercises and finger exercises
 
-### Take-Home Materials
-Additional notebooks on NumPy and scientific computing in Python are provided for self-study.
+### Key Concepts
+- Supervised vs unsupervised classification
+- Training and test set evaluation
+- Cross-validation techniques
+- Overfitting in classification models
+- Feature importance and selection
+- Bias-variance tradeoff in classification
+
+### Algorithms Covered
+- **k-NN**: Distance-based classification
+- **Naive Bayes**: Probabilistic approach
+- **Decision Trees**: Rule-based classification
+- **AdaBoost**: Adaptive boosting
+- **Bagging**: Bootstrap aggregating
+
+### Practical Skills
+- Implementing classifiers from scratch
+- Using scikit-learn for classification tasks
+- Model evaluation and performance metrics
+- Data visualization with matplotlib
+- Handling categorical and numerical features
+
+### Assignments
+- **Exercise 3**: Distributed this week
+- Complete finger exercises with TA guidance
+- Practice implementing and comparing different classifiers

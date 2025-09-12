@@ -1,47 +1,82 @@
 ---
-title: "Week 10: Deep Learning Primer"
+title: "Week 10: Gaussian Processes"
 date: 2025-11-17
-description: "Introduction to deep learning, neural networks, and TensorFlow"
-lecture_slides: "/course-materials/lectures/lecture_10/slides/Advanced_Programming_2025_lecture_10.pdf"
-ta_slides: "/course-materials/slides/practice/week10_slides.html"
-lesson: "/course-materials/lessons/week10-lesson.html"
+description: "Gaussian Process regression, Kernels with noise, Exercise 6 distributed"
+lecture_slides: 
+  - title: "Lecture slides, week 10"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_10/slides/Advanced_Data_Analytics_2025_lecture_10.pdf"
+ta_slides: 
+  - title: "Finger exercises part 1 (at the end of the lecture (with TA))"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_10/Finger_exercises_a/finger_exercises_lecture_10.pdf"
+  - title: "Finger exercises part 2 (at the end of the lecture (with TA))"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_10/Finger_exercises_b/finger_exercises_lecture_10.pdf"
 assignment:
-  title: "Neural Network Assignment"
-  link: "#"
-  description: "Build and train a simple neural network"
+  title: "Exercise 6"
+  link: "/ada-course-materials/advanced_data_analytics_2025/exercises/Exercise_6/Problem_set_6.pdf"
+  description: "Distribution of Exercise sheet 6"
 examples:
-  - title: "Multi-layer Perceptron"
-    link: "/course-materials/lectures/lecture_10/demo/mlp.py"
-  - title: "Gradient Descent & SGD"
-    link: "/course-materials/lectures/lecture_10/demo/01_GradientDescent_and_StochasticGradientDescent.ipynb"
-  - title: "MLP Notebook"
-    link: "/course-materials/lectures/lecture_10/demo/02_Multi-layer_Perceptron.ipynb"
-  - title: "Gentle Introduction to DNNs"
-    link: "/course-materials/lectures/lecture_10/demo/03_Gentle_DNN.ipynb"
-  - title: "Function Approximation"
-    link: "/course-materials/lectures/lecture_10/demo/approx_analytical_function.py"
+  - title: "Multiple Demo Files"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_10/demo/"
+  - title: "Finance Demo (Option-pricing examples, if time permits)"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_10/finance_demo/"
+  - title: "GP Demo"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_10/demo_GP/"
 references:
-  - title: "Deep Learning Book"
-    link: "https://www.deeplearningbook.org/"
-    description: "Goodfellow, Bengio, and Courville"
-  - title: "TensorFlow Documentation"
-    link: "https://www.tensorflow.org/"
-    description: "Official TensorFlow guides and tutorials"
+  - title: "Finger Exercises"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_10/Finger_exercises_a/"
+    description: "Finger exercises part 1 and 2 (at the end of the lecture (with TA))"
 ---
 
-## Week 10: Deep Learning Primer
+## Week 10: Gaussian Processes
+
+### Learning Objectives
+- Understand the theoretical foundations of Gaussian Processes (GPs)
+- Master Gaussian Process regression techniques
+- Learn about kernels and their role in GP modeling
+- Handle noisy data in GP frameworks
+- Apply GPs to financial modeling and option pricing
+- Understand GP classification methods
 
 ### Topics Covered
-- Deep learning basics
-- Multi-layer perceptron
-- Feed-forward networks
-- Network training - SGD
-- Error back-propagation
-- Some notes on overfitting
-- Introduction to TensorFlow, applied to supervised machine learning problems
+- **Gaussian Process Regression**: Theoretical foundations and practical implementation
+- **Kernels with Noise**: Incorporating uncertainty and noise in GP models
+- **Option-Pricing Examples**: Financial applications of Gaussian Processes
+- **GP Classification**: Extending GPs to classification problems
+- **Bayesian Framework**: Understanding the Bayesian perspective in GPs
+- **Hyperparameter Optimization**: Tuning GP models for optimal performance
 
-### Code Examples
-This week includes implementations of neural networks from scratch and using TensorFlow, demonstrating fundamental deep learning concepts.
+### Schedule
+- **Lecture**: Monday, November 17, 2025 (10:15 - 12:00)  
+- **Practice Session**: Monday, November 17, 2025 (16:30 - 18:00)
+- **TA Session**: Two-part finger exercises and practical implementations
+
+### Key Concepts
+- **Gaussian Processes**: Non-parametric Bayesian approach to regression
+- **Kernel Functions**: RBF, Matern, periodic kernels and their properties
+- **Mean and Covariance Functions**: Defining GP priors
+- **Marginal Likelihood**: Model selection and hyperparameter optimization
+- **Uncertainty Quantification**: Predictive distributions and confidence intervals
+- **Computational Complexity**: Scaling GPs and approximation methods
+
+### Mathematical Foundations
+- Multivariate Gaussian distributions
+- Kernel methods and reproducing kernel Hilbert spaces
+- Bayesian inference and posterior distributions
+- Maximum likelihood estimation for hyperparameters
 
 ### Practical Applications
-Learn to build, train, and evaluate neural networks for various supervised learning tasks.
+- **1D and 2D Regression**: Basic GP regression examples
+- **Financial Modeling**: Option pricing using GP methods
+- **Noise Handling**: Robust regression with noisy observations
+- **Multi-dimensional Problems**: Scaling to higher dimensions
+- **Classification Tasks**: GP classification with various kernels
+
+### Assignments
+- **Exercise 6**: Distributed this week - GP implementation and applications
+- Complete two-part finger exercises covering theory and practice
+- Implement GP regression from scratch and compare with scikit-learn
+
+### Tools and Libraries
+- GPy and GPFlow for advanced GP modeling
+- scikit-learn for basic GP implementations
+- Practical GP examples and case studies

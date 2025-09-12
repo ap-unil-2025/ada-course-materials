@@ -27,7 +27,7 @@ layout: default
   <!-- Compact header for help & support -->
   <div class="help-header">
     <h1>Help & Support</h1>
-    <p>Office hours, TA sessions, Discord community, and learning resources</p>
+    <p>Office hours, TA sessions, and learning resources</p>
   </div>
 
   <!-- Support Banner -->
@@ -35,11 +35,11 @@ layout: default
     <div class="support-content">
       <span class="support-label">24/7</span>
       <div class="support-info">
-        <h2>DSAP Help & Support</h2>
-        <p>Multiple channels • Quick responses • Community driven</p>
+        <h2>ADA Help & Support</h2>
+        <p>Office hours • Email support • Course resources</p>
       </div>
     </div>
-    <a href="https://discord.gg/pr4q3QH2" target="_blank" class="support-btn">Join Discord →</a>
+    <a href="mailto:mariapia.lombardo@unil.ch" class="support-btn">Contact TAs →</a>
   </div>
 
   <!-- Office Hours & Contact -->
@@ -51,18 +51,27 @@ layout: default
         <div class="contact-header">
           <span class="contact-role">Lead TA</span>
         </div>
-        <h4>Anna Smirnova</h4>
-        <p><a href="mailto:anna.smirnova@unil.ch">anna.smirnova@unil.ch</a></p>
+        <h4>Maria Pia Lombardo</h4>
+        <p><a href="mailto:mariapia.lombardo@unil.ch">mariapia.lombardo@unil.ch</a></p>
         <div class="office-hours">
           <div class="hours-item">
             <span class="hours-day">Monday</span>
-            <span class="hours-time">15:15–16:00</span>
+            <span class="hours-time">17:15–18:00</span>
           </div>
           <div class="hours-item">
             <span class="hours-day">Friday</span>
             <span class="hours-time">On request</span>
           </div>
         </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-header">
+          <span class="contact-role">Teaching Assistant</span>
+        </div>
+        <h4>Anna Smirnova</h4>
+        <p><a href="mailto:anna.smirnova@unil.ch">anna.smirnova@unil.ch</a></p>
+        <p>Support for generative AI (Week 5) and programming help</p>
       </div>
 
       <div class="contact-item">
@@ -91,16 +100,10 @@ layout: default
     <h3 class="section-title">Community Resources</h3>
     <div class="resources-grid">
       
-      <a href="https://github.com/ap-unil-2025/course-materials/discussions" target="_blank" class="resource-item">
-        <div class="resource-icon">💬</div>
-        <h4>GitHub Discussions</h4>
-        <p>Ask questions • Share solutions • Community help • Course announcements</p>
-      </a>
-
-      <a href="#" target="_blank" class="resource-item">
-        <div class="resource-icon">🎮</div>
-        <h4>Discord Community</h4>
-        <p>Real-time chat • Study groups • Quick questions • Peer support</p>
+      <a href="https://docs.google.com/spreadsheets/d/1DWmx_bJ0NW9cZMPX_nteiCcTBt1n65LnT_BI_r4loDo/edit#gid=0" target="_blank" class="resource-item">
+        <div class="resource-icon">📋</div>
+        <h4>Questions Document</h4>
+        <p>Submit questions • Review answers • Track discussions</p>
       </a>
 
       <div class="resource-item">
@@ -113,61 +116,6 @@ layout: default
     </div>
   </section>
 
-  <!-- Technical Support -->
-  <section class="help-section">
-    <h3 class="section-title">Technical Support</h3>
-    <div class="tech-grid">
-      
-      <div class="tech-item">
-        <div class="tech-header">
-          <span class="tech-badge">Platform</span>
-        </div>
-        <h4>Nuvolos Cloud Issues</h4>
-        <p>Login problems • Environment setup • File access • Performance issues</p>
-        <div class="tech-actions">
-          <a href="mailto:support@nuvolos.cloud" class="tech-link">Email Support</a>
-          <a href="https://app.nuvolos.cloud/enroll/class/RshD654gzU4" target="_blank" class="tech-link">Re-enroll</a>
-        </div>
-      </div>
-
-      <div class="tech-item">
-        <div class="tech-header">
-          <span class="tech-badge">GitHub</span>
-        </div>
-        <h4>Repository Access</h4>
-        <p>Can't access course materials • GitHub organization issues • Permission problems</p>
-        <div class="tech-actions">
-          <a href="https://github.com/ap-unil-2025" target="_blank" class="tech-link">GitHub Org</a>
-          <a href="mailto:anna.smirnova@unil.ch" class="tech-link">Request Access</a>
-        </div>
-      </div>
-
-      <div class="tech-item">
-        <div class="tech-header">
-          <span class="tech-badge">Code</span>
-        </div>
-        <h4>Programming Help</h4>
-        <p>Python syntax • Library issues • Debugging • Best practices</p>
-        <div class="tech-actions">
-          <a href="https://discord.gg/pr4q3QH2" target="_blank" class="tech-link">Join Discord</a>
-          <a href="mailto:anna.smirnova@unil.ch" class="tech-link">Office Hours</a>
-        </div>
-      </div>
-
-      <div class="tech-item">
-        <div class="tech-header">
-          <span class="tech-badge">Discord</span>
-        </div>
-        <h4>Community Chat</h4>
-        <p>Real-time help • Peer support • Quick questions • Study groups</p>
-        <div class="tech-actions">
-          <a href="https://discord.gg/pr4q3QH2" target="_blank" class="tech-link">Join Discord</a>
-          <a href="https://github.com/ap-unil-2025/course-materials/discussions" target="_blank" class="tech-link">GitHub Discussions</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Getting Started Guide -->
   <section class="help-section">
@@ -178,31 +126,31 @@ layout: default
         <div class="step-number">1</div>
         <div class="step-content">
           <h4>Enroll in Nuvolos</h4>
-          <p>Click the <a href="https://app.nuvolos.cloud/enroll/class/RshD654gzU4" target="_blank">enrollment link</a> and follow setup instructions</p>
+          <p>Click the <a href="https://app.nuvolos.cloud/enroll/class/sBsa1T_Mm5Y" target="_blank">enrollment link</a> and follow setup instructions</p>
         </div>
       </div>
 
       <div class="step-item">
         <div class="step-number">2</div>
         <div class="step-content">
-          <h4>Join GitHub Organization</h4>
-          <p>Request access to <a href="https://github.com/ap-unil-2025" target="_blank">ap-unil-2025</a> for course materials</p>
+          <h4>Access Course Materials</h4>
+          <p>Visit the <a href="{{ '/weekly-materials' | relative_url }}">Weekly Hub</a> for lectures and exercises</p>
         </div>
       </div>
 
       <div class="step-item">
         <div class="step-number">3</div>
         <div class="step-content">
-          <h4>Join Discord Community</h4>
-          <p>Connect with peers and TAs on <a href="https://discord.gg/pr4q3QH2" target="_blank">Discord</a> for real-time help</p>
+          <h4>Attend TA Sessions</h4>
+          <p>Join Monday sessions at 17:15-18:00 or request Friday sessions</p>
         </div>
       </div>
 
       <div class="step-item">
         <div class="step-number">4</div>
         <div class="step-content">
-          <h4>Access Weekly Materials</h4>
-          <p>Visit the <a href="{{ '/weekly-materials' | relative_url }}">Weekly Hub</a> for lectures, assignments, and practice</p>
+          <h4>Start Your Project</h4>
+          <p>Submit proposal by Nov 10 • Review <a href="{{ '/projects' | relative_url }}">project requirements</a></p>
         </div>
       </div>
 

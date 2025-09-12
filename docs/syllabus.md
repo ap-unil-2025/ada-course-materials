@@ -27,7 +27,7 @@ layout: default
   <!-- Compact header for syllabus -->
   <div class="syllabus-header">
     <h1>Course Syllabus</h1>
-    <p>Learning objectives, schedule, grading policy, and course requirements</p>
+    <p>Advanced Data Analytics • HEC Lausanne • Fall 2025</p>
   </div>
 
   <!-- Course Overview Banner -->
@@ -35,17 +35,21 @@ layout: default
     <div class="course-content">
       <span class="course-label">2025</span>
       <div class="course-info">
-        <h2>Data Science and Advanced Programming</h2>
-        <p>DSAP • HEC Lausanne • Mondays 12:30–16:00 • Internef 263</p>
+        <h2>Advanced Data Analytics</h2>
+        <p>Machine Learning for Economics & Finance</p>
       </div>
     </div>
     <a href="{{ '/weekly-materials' | relative_url }}" class="course-btn">View Materials →</a>
   </div>
 
-  <!-- Link to Professor's Syllabus -->
-  <div style="margin: 1.5rem 0; padding: 1rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #3b82f6; border-radius: 0.5rem; text-align: center;">
-    <p style="margin: 0; font-size: 0.95rem; color: #1e40af;">
-      📄 <strong>Note:</strong> View the <a href="{{ '/professor-syllabus' | relative_url }}" style="font-weight: 600; color: #3b82f6;">Professor's Official Syllabus</a> for the most up-to-date course details and schedule
+  <!-- Meeting Information -->
+  <div style="margin: 1.5rem 0; padding: 1rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border: 1px solid #3b82f6; border-radius: 0.5rem;">
+    <h4 style="margin: 0 0 0.5rem 0; color: #1e40af;">📍 Meeting Time & Location</h4>
+    <p style="margin: 0 0 0.25rem 0; font-size: 0.9rem; color: #1e40af;">
+      <strong>Time:</strong> Mondays, 10:15 - 12:00 (Lecture) • 16:30 - 18:00 (Practice)
+    </p>
+    <p style="margin: 0; font-size: 0.9rem; color: #1e40af;">
+      <strong>Location:</strong> Internef 126 (Morning) • Anthropole 3185 (Afternoon)
     </p>
   </div>
 
@@ -59,7 +63,7 @@ layout: default
           <span class="info-badge">Goal</span>
         </div>
         <h4>Learning Objectives</h4>
-        <p>Master Python, statistical learning, and high-performance computing for quantitative analysis in Economics and Finance.</p>
+        <p>Gain practical familiarity with current computer-aided data analysis and machine learning approaches.</p>
       </div>
 
       <div class="info-item">
@@ -67,7 +71,7 @@ layout: default
           <span class="info-badge">Format</span>
         </div>
         <h4>Course Structure</h4>
-        <p>Three 45-minute lectures + one 45-minute hands-on session per week with practical applications.</p>
+        <p>14-week Master's level course: Three 45-minute lectures + 45-minute hands-on session each Monday.</p>
       </div>
 
       <div class="info-item">
@@ -75,15 +79,15 @@ layout: default
           <span class="info-badge priority">Platform</span>
         </div>
         <h4>Nuvolos Cloud</h4>
-        <p>All materials distributed via cloud platform. <a href="https://app.nuvolos.cloud/enroll/class/RshD654gzU4" target="_blank">Enroll here</a>.</p>
+        <p>All materials distributed via cloud platform. <a href="https://app.nuvolos.cloud/enroll/class/sBsa1T_Mm5Y" target="_blank">Enroll here</a>.</p>
       </div>
 
       <div class="info-item">
         <div class="info-header">
-          <span class="info-badge">Community</span>
+          <span class="info-badge">Support</span>
         </div>
-        <h4>Discord Server</h4>
-        <p>Real-time help and peer support. <a href="https://discord.gg/pr4q3QH2" target="_blank">Join Discord</a>.</p>
+        <h4>TA Sessions</h4>
+        <p>Mondays 17:15-18:00 with Maria Pia Lombardo. Fridays by request.</p>
       </div>
 
     </div>
@@ -95,33 +99,33 @@ layout: default
     <div class="skills-grid">
       
       <div class="skill-item">
-        <div class="skill-icon">🐍</div>
-        <h4>Python Programming</h4>
-        <p>Clean, efficient code • NumPy & Pandas • Visualization</p>
+        <div class="skill-icon">🧠</div>
+        <h4>Supervised Learning</h4>
+        <p>Regression • Classification • Deep Neural Networks</p>
       </div>
 
       <div class="skill-item">
         <div class="skill-icon">📊</div>
-        <h4>Statistical Learning</h4>
-        <p>Bias–variance • Model assessment • ML algorithms</p>
+        <h4>Unsupervised Learning</h4>
+        <p>Clustering • PCA • Gaussian Mixture Models</p>
       </div>
 
       <div class="skill-item">
-        <div class="skill-icon">🧠</div>
-        <h4>Machine Learning</h4>
-        <p>Regression • Classification • Tree methods • Neural networks</p>
+        <div class="skill-icon">🎮</div>
+        <h4>Reinforcement Learning</h4>
+        <p>Q-Learning • Portfolio optimization • If time permits</p>
       </div>
 
       <div class="skill-item">
-        <div class="skill-icon">⚡</div>
-        <h4>High-Performance Computing</h4>
-        <p>Code acceleration • Parallel processing • Optimization</p>
+        <div class="skill-icon">🤖</div>
+        <h4>Deep Learning</h4>
+        <p>TensorFlow • PyTorch • RNNs • LSTMs</p>
       </div>
 
       <div class="skill-item">
         <div class="skill-icon">🎯</div>
-        <h4>Project Management</h4>
-        <p>End-to-end projects • Version control • Presentation</p>
+        <h4>Applied ML</h4>
+        <p>Stock prediction • NLP • Real-world applications</p>
       </div>
 
     </div>
@@ -137,29 +141,29 @@ layout: default
       <div class="schedule-part">
         <div class="part-header">
           <span class="part-badge">Part I</span>
-          <h4>Python Foundations</h4>
-          <span class="part-dates">Weeks 1-6</span>
+          <h4>Foundations</h4>
+          <span class="part-dates">Weeks 1-5</span>
         </div>
         <div class="part-topics">
-          <span class="topic">Course Setup</span>
-          <span class="topic">Unix/Linux & Git</span>
-          <span class="topic">Python Basics</span>
-          <span class="topic">Functions & OOP</span>
-          <span class="topic">Generative AI</span>
+          <span class="topic">ML Intro</span>
+          <span class="topic">Python Crash Course</span>
+          <span class="topic">Linear Regression</span>
+          <span class="topic">Generative AI & Agents</span>
         </div>
       </div>
 
       <div class="schedule-part">
         <div class="part-header">
           <span class="part-badge">Part II</span>
-          <h4>Data Science</h4>
-          <span class="part-dates">Weeks 7-10</span>
+          <h4>Core ML</h4>
+          <span class="part-dates">Weeks 6-10</span>
         </div>
         <div class="part-topics">
-          <span class="topic">Linear Regression</span>
           <span class="topic">Classification</span>
-          <span class="topic">Unsupervised Learning</span>
           <span class="topic">Deep Learning</span>
+          <span class="topic">TensorFlow/PyTorch</span>
+          <span class="topic">RNNs/LSTMs</span>
+          <span class="topic">Gaussian Processes</span>
         </div>
       </div>
 
@@ -170,9 +174,10 @@ layout: default
           <span class="part-dates">Weeks 11-14</span>
         </div>
         <div class="part-topics">
-          <span class="topic">Advanced ML</span>
-          <span class="topic">High-Performance Computing</span>
-          <span class="topic">Project Presentations</span>
+          <span class="topic">Dimensionality Reduction</span>
+          <span class="topic">Clustering</span>
+          <span class="topic">Reinforcement Learning</span>
+          <span class="topic">Capstone Projects</span>
         </div>
       </div>
 
@@ -186,9 +191,9 @@ layout: default
       
       <div class="assessment-item primary">
         <div class="assessment-icon">🎯</div>
-        <h4>Individual Project</h4>
-        <p>Python programming project • 10-page report • GitHub repository • Optional presentation</p>
-        <a href="{{ '/INDIVIDUAL_PROJECT_RULES' | relative_url }}" class="project-link">View Project Guidelines →</a>
+        <h4>Capstone Project</h4>
+        <p>Individual data science project • 10-page report • GitHub repository • Video presentation (max 10 min)</p>
+        <a href="{{ '/projects' | relative_url }}" class="project-link">View Project Guidelines →</a>
       </div>
 
       <div class="assessment-item">
@@ -198,9 +203,9 @@ layout: default
       </div>
 
       <div class="assessment-item">
-        <div class="assessment-icon">⭐</div>
-        <h4>Bonus Points</h4>
-        <p>Additional opportunities through homework assignments throughout the semester</p>
+        <div class="assessment-icon">📝</div>
+        <h4>Exercise Sheets</h4>
+        <p>8 problem sets distributed throughout the semester for practice and learning</p>
       </div>
 
     </div>
@@ -214,15 +219,8 @@ layout: default
       <div class="reference-item">
         <div class="reference-type">Statistical Learning</div>
         <h4>An Introduction to Statistical Learning</h4>
-        <p>James, Witten, Hastie, Tibshirani (2nd Edition)</p>
+        <p>James, Witten, Hastie, Tibshirani • Springer</p>
         <p><a href="https://www.statlearning.com" target="_blank">statlearning.com</a></p>
-      </div>
-
-      <div class="reference-item">
-        <div class="reference-type">Machine Learning</div>
-        <h4>Probabilistic Machine Learning: An Introduction</h4>
-        <p>Kevin P. Murphy • MIT Press</p>
-        <p><a href="http://probml.github.io/book1" target="_blank">probml.github.io/book1</a></p>
       </div>
 
       <div class="reference-item">
@@ -233,24 +231,31 @@ layout: default
       </div>
 
       <div class="reference-item">
-        <div class="reference-type">Python Programming</div>
-        <h4>Introduction to Computation and Programming Using Python</h4>
-        <p>John V. Guttag • MIT Press</p>
-        <p>Comprehensive introduction to Python programming</p>
+        <div class="reference-type">Pattern Recognition</div>
+        <h4>Pattern Recognition and Machine Learning</h4>
+        <p>Christopher Bishop • Springer</p>
+        <p><a href="https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf" target="_blank">Download PDF</a></p>
       </div>
 
       <div class="reference-item">
-        <div class="reference-type">Scientific Python</div>
-        <h4>A Primer on Scientific Programming with Python</h4>
-        <p>Hans Petter Langtangen • Springer</p>
-        <p>Focus on scientific computing applications</p>
+        <div class="reference-type">Mathematics</div>
+        <h4>Mathematics for Machine Learning</h4>
+        <p>Essential mathematical foundations</p>
+        <p><a href="https://mml-book.github.io/" target="_blank">mml-book.github.io</a></p>
       </div>
 
       <div class="reference-item">
-        <div class="reference-type">Economics & Finance</div>
-        <h4>QuantEcon</h4>
-        <p>Lectures on quantitative economics</p>
-        <p><a href="https://quantecon.org" target="_blank">quantecon.org</a></p>
+        <div class="reference-type">Python</div>
+        <h4>Python Programming</h4>
+        <p>QuantEcon lectures on Python</p>
+        <p><a href="https://python-programming.quantecon.org/intro.html" target="_blank">quantecon.org</a></p>
+      </div>
+
+      <div class="reference-item">
+        <div class="reference-type">Support</div>
+        <h4>Course Resources</h4>
+        <p>Questions & Materials</p>
+        <p><a href="https://docs.google.com/spreadsheets/d/1DWmx_bJ0NW9cZMPX_nteiCcTBt1n65LnT_BI_r4loDo/edit#gid=0" target="_blank">Google Doc</a></p>
       </div>
 
     </div>

@@ -1,46 +1,70 @@
 ---
-title: "Week 7: Linear Regression"
+title: "Week 7: Deep Learning Basics"
 date: 2025-10-27
-description: "Supervised learning, linear regression, gradient descent, and polynomial regression"
-lecture_slides: "/course-materials/lectures/lecture_7/slides/Advanced_Programming_2025_lecture_7.pdf"
-ta_slides: "/course-materials/slides/practice/week07_slides.html"
-lesson: "/course-materials/lessons/week07-lesson.html"
+description: "Deep learning basics, MLPs, Feed-forward networks, Exercise 4 distributed"
+lecture_slides: 
+  - title: "Lecture slides, week 7"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_7/slides/Advanced_Data_Analytics_2025_lecture_7.pdf"
+ta_slides: []
 assignment:
-  title: "Linear Regression Assignment"
-  link: "#"
-  description: "Implement regression models and gradient descent"
+  title: "Exercise 4"
+  link: "/ada-course-materials/advanced_data_analytics_2025/exercises/Exercise_4/Problem_set_4.pdf"
+  description: "Distribution of Exercise sheet 4"
 examples:
-  - title: "Ridge Regression Example"
-    link: "/course-materials/lectures/lecture_7/demo/ridge_regression.py"
-  - title: "Gradient Descent Implementation"
-    link: "/course-materials/lectures/lecture_7/demo/gradient_descent.py"
-  - title: "K-Fold Cross Validation"
-    link: "/course-materials/lectures/lecture_7/demo/k-fold_cross_validation.py"
-  - title: "Stock Prediction Notebook"
-    link: "/course-materials/lectures/lecture_7/demo/Stock_prediction_ML_Lecture8.ipynb"
+  - title: "Introduction to Tensorflow, applied to supervised machine learning problems"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_7/demo/03_Gentle_DNN.ipynb"
+  - title: "Multiple Demo Files"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_7/demo/"
 references:
-  - title: "ISL Chapter 3"
-    link: "https://www.statlearning.com"
-    description: "Linear Regression"
-  - title: "PML Ch. 6.3–6.5"
-    link: "http://probml.github.io/book1"
-    description: "Bayesian linear regression, uncertainty, model comparison"
+  - title: "Deep Learning Materials"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_7/"
+    description: "Discussion of the previous exercises (with TA)"
 ---
 
-## Week 7: Linear Regression
+## Week 7: Deep Learning Basics
+
+### Learning Objectives
+- Understand the fundamentals of neural networks and deep learning
+- Learn about multi-layer perceptrons (MLPs) and their architecture
+- Master feed-forward networks and their training process
+- Understand stochastic gradient descent (SGD) and backpropagation
+- Recognize overfitting issues and regularization techniques
+- Apply deep learning to real-world problems
 
 ### Topics Covered
-- Supervised Learning - the general idea
-- Linear Regression (with multiple variables)
-- Gradient Descent
-- Polynomial Regression
-- Tuning Model Complexity
-- Stock Market Prediction (if time permits)
-- Introduction to Pandas (quick tour; self-study)
+- **Deep Learning Basics**: Neural network fundamentals and motivation
+- **Multi-layer Perceptron (MLP)**: Architecture and design principles
+- **Feed-forward Networks**: Information flow and network topology
+- **Network Training**: Stochastic Gradient Descent (SGD) optimization
+- **Error Backpropagation**: Algorithm for computing gradients
+- **Overfitting Prevention**: Regularization techniques and best practices
+- **Introduction to TensorFlow**: Applied to supervised learning problems
 
-### Code Examples
-This week includes practical implementations of regression algorithms and real-world applications like stock market prediction.
+### Schedule
+- **Lecture**: Monday, October 27, 2025 (10:15 - 12:00)
+- **Practice Session**: Monday, October 27, 2025 (16:30 - 18:00)
+- **TA Session**: Discussion of exercises and neural network implementations
+
+### Key Concepts
+- **Perceptron**: Single neuron model and limitations
+- **Universal Approximation Theorem**: Theoretical foundation of neural networks
+- **Activation Functions**: ReLU, sigmoid, tanh, and their properties
+- **Loss Functions**: Mean squared error, cross-entropy for different tasks
+- **Optimization**: Gradient descent variants and learning rates
+- **Regularization**: Dropout, weight decay, early stopping
+
+### Practical Skills
+- Building neural networks from scratch
+- Implementing backpropagation algorithm
+- Using TensorFlow for deep learning tasks
+- Network architecture design and hyperparameter tuning
+- Debugging and troubleshooting neural networks
+
+### Assignments
+- **Exercise 4**: Distributed this week - Neural network implementation
+- Practice building and training MLPs
+- Explore different activation functions and architectures
 
 ### Further Reading
-- ISL Chapter 3: Linear Regression
-- PML Ch. 6.3–6.5: Bayesian linear regression, uncertainty, model comparison
+- Deep Learning textbook chapters on MLPs and backpropagation
+- TensorFlow documentation and tutorials

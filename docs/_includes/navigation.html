@@ -1,7 +1,11 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <a class="site-title" href="{{ '/' | relative_url }}" aria-label="Homepage">
         <img src="{{ '/assets/images/unil.jpeg' | relative_url }}" alt="UNIL Logo" class="site-logo">
-        <span class="site-title-text">DSAP</span>
+        <span class="site-title-text">ADA</span>
+    </a>
+    
+    <a href="https://app.nuvolos.cloud/enroll/class/sBsa1T_Mm5Y" target="_blank" class="nuvolos-logo-link" aria-label="Enroll in Nuvolos">
+        <img src="{{ '/assets/images/nuvolos_logo_small.svg' | relative_url }}" alt="Nuvolos" class="nuvolos-logo">
     </a>
     
     <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -119,6 +123,24 @@ document.addEventListener('DOMContentLoaded', function() {
     margin-left: 0.25rem;
 }
 
+.nuvolos-logo-link {
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.nuvolos-logo {
+    height: 32px;
+    width: auto;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.nuvolos-logo:hover {
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     .site-nav {
         position: relative;
@@ -126,6 +148,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     .nav-toggle {
         display: flex;
+    }
+    
+    .nuvolos-logo-link {
+        margin-right: 0.5rem;
+    }
+    
+    .nuvolos-logo {
+        height: 28px;
     }
     
     .nav-links {

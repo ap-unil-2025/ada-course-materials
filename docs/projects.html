@@ -25,19 +25,19 @@ layout: default
 <div class="projects-page">
   <!-- Compact header for projects page -->
   <div class="projects-header">
-    <h1>Final Projects</h1>
-    <p>Choose your own adventure with our individual programming projects</p>
+    <h1>Capstone Project</h1>
+    <p>Advanced Data Analytics • Individual Projects • 100% of Final Grade</p>
   </div>
   <!-- Projects Banner -->
   <div class="projects-banner">
     <div class="projects-content">
       <span class="projects-label">2025</span>
       <div class="projects-info">
-        <h2>Final Projects</h2>
-        <p>Individual projects • Choose your own adventure • Full technical assessment</p>
+        <h2>Capstone Project</h2>
+        <p>Individual ML project • 8-10 page report • Source code & dataset • 15-min video</p>
       </div>
     </div>
-    <a href="{{ '/INDIVIDUAL_PROJECT_RULES/' | relative_url }}" class="projects-btn">View Full Rules →</a>
+    <a href="{{ '/assets/capstone_project.pdf' | relative_url }}" class="projects-btn">Download Requirements PDF →</a>
   </div>
 
   <!-- Quick Overview -->
@@ -57,15 +57,15 @@ layout: default
         <div class="rule-icon">📅</div>
         <div class="rule-content">
           <h4>Important Dates</h4>
-          <p>Proposal: Nov 3 • Final: Dec 15</p>
+          <p>Proposal: Nov 10 • Final: Dec 21</p>
         </div>
       </div>
 
       <div class="compact-rule">
         <div class="rule-icon">🎯</div>
         <div class="rule-content">
-          <h4>Project Options</h4>
-          <p>Free-topic or SE template</p>
+          <h4>Grading</h4>
+          <p>100% based on project</p>
         </div>
       </div>
 
@@ -73,185 +73,176 @@ layout: default
         <div class="rule-icon">📦</div>
         <div class="rule-content">
           <h4>Deliverables</h4>
-          <p>GitHub • 10-page report • Presentation</p>
+          <p>Report • Source Code • Dataset • Video</p>
         </div>
       </div>
 
       <div class="compact-rule">
-        <div class="rule-icon">🔧</div>
+        <div class="rule-icon">📝</div>
         <div class="rule-content">
-          <h4>Requirements</h4>
-          <p>Python 3.10+ • Clean code • Git</p>
+          <h4>Proposal</h4>
+          <p>200 words by Nov 10</p>
         </div>
       </div>
 
       <div class="compact-rule">
-        <div class="rule-icon">📊</div>
+        <div class="rule-icon">⏱️</div>
         <div class="rule-content">
-          <h4>Grading Weight</h4>
-          <p>100% of final grade</p>
+          <h4>Video Length</h4>
+          <p>15 minutes max</p>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Report Templates -->
+  <!-- Report Requirements -->
   <section class="projects-section">
-    <h3 class="section-title">Report Templates</h3>
-    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Download templates for your 10-page technical report (single column format):</p>
+    <h3 class="section-title">Report Requirements</h3>
+    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Your report must be 8-10 pages (excluding references) in SIAM conference style:</p>
     <div class="template-downloads">
-      <a href="{{ '/assets/templates/project_report_template_md.txt' | relative_url }}" class="download-card" download="project_report_template.md">
-        <span class="download-icon">📝</span>
-        <div>
-          <h4>Markdown Template</h4>
-          <p>Simple format with pandoc</p>
-        </div>
-      </a>
-      <a href="{{ '/assets/templates/project_report_template.tex' | relative_url }}" class="download-card" download>
+      <a href="{{ '/assets/capstone_project.pdf' | relative_url }}" class="download-card" download>
         <span class="download-icon">📄</span>
         <div>
-          <h4>LaTeX Template</h4>
-          <p>Professional academic format</p>
+          <h4>Full Requirements PDF</h4>
+          <p>Detailed guidelines & grading criteria</p>
+        </div>
+      </a>
+      <a href="https://www.overleaf.com/latex/templates/template-for-siam-journals/cbbdwqgfhrkd" target="_blank" class="download-card">
+        <span class="download-icon">📝</span>
+        <div>
+          <h4>SIAM LaTeX Template</h4>
+          <p>Overleaf template (required format)</p>
         </div>
       </a>
     </div>
     
-    <!-- How to Use Templates -->
-    <div class="template-usage">
-      <button class="usage-toggle" onclick="toggleUsageInstructions()">
-        <span class="toggle-icon">▶</span>
-        <span class="toggle-text">📚 How to Use These Templates</span>
-        <span class="toggle-hint">(click to expand)</span>
-      </button>
-      
-      <div class="usage-content" id="usageContent" style="display: none;">
-        <div class="usage-tabs">
-        <div class="usage-tab">
-          <h5>📝 Markdown Template</h5>
-          <ol>
-            <li><strong>Download</strong> the template and save it as <code>project_report.md</code></li>
-            <li><strong>Edit</strong> the file in any text editor (VS Code, Sublime, etc.)</li>
-            <li><strong>Convert to PDF</strong> using pandoc:
-              <pre><code>pandoc project_report.md -o project_report.pdf --pdf-engine=xelatex</code></pre>
-            </li>
-            <li><strong>Alternative:</strong> Use online converters like <a href="https://pandoc.org/try/" target="_blank">Pandoc Online</a> or <a href="https://dillinger.io/" target="_blank">Dillinger</a></li>
-          </ol>
-          <p class="template-tip">💡 <strong>Tip:</strong> VS Code with Markdown Preview Enhanced extension provides live preview while editing.</p>
-        </div>
-        
-        <div class="usage-tab">
-          <h5>📄 LaTeX Template</h5>
-          <ol>
-            <li><strong>Download</strong> the template and save it as <code>project_report.tex</code></li>
-            <li><strong>Edit</strong> using a LaTeX editor (Overleaf, TeXstudio, VS Code with LaTeX Workshop)</li>
-            <li><strong>Compile to PDF</strong>:
-              <pre><code>pdflatex project_report.tex
-bibtex project_report  # if using references
-pdflatex project_report.tex</code></pre>
-            </li>
-            <li><strong>Online option:</strong> Upload to <a href="https://www.overleaf.com" target="_blank">Overleaf</a> for cloud-based editing</li>
-          </ol>
-          <p class="template-tip">💡 <strong>Tip:</strong> Overleaf is recommended for beginners - no installation required!</p>
-        </div>
-      </div>
-      
-      <div class="format-requirements">
-        <h5>⚠️ Important Format Requirements</h5>
-        <ul>
-          <li>✅ <strong>Exactly 10 pages</strong> (excluding references and appendices)</li>
-          <li>✅ <strong>Single column format</strong> (not double column)</li>
-          <li>✅ <strong>11pt font size</strong> with 1-inch margins</li>
-          <li>✅ <strong>Include all sections</strong> from the template</li>
-          <li>✅ <strong>PDF submission</strong> required (not .docx or .md)</li>
-        </ul>
-      </div>
-      </div>
+    <!-- Format Requirements -->
+    <div class="format-requirements" style="margin-top: 1.5rem;">
+      <h5>⚠️ Important Format Requirements</h5>
+      <ul>
+        <li>✅ <strong>8-10 pages</strong> (minimum 8, excluding references)</li>
+        <li>✅ <strong>SIAM conference style</strong> (required format)</li>
+        <li>✅ <strong>Submit via email:</strong> Report (PDF) + Code + Dataset + Video</li>
+        <li>✅ <strong>Include all 8 mandatory sections</strong></li>
+        <li>✅ <strong>Due December 21, 2025 at 23:59</strong></li>
+      </ul>
     </div>
   </section>
 
-  <!-- Free-Topic Section (Primary Option) -->
+  <!-- Project Scope and Guidelines -->
   <section class="projects-section">
-    <h3 class="section-title">Project Options</h3>
+    <h3 class="section-title">Project Scope & Guidelines</h3>
+    
+    <div class="project-guidelines">
+      <h4>📌 Project Requirements</h4>
+      <p>Your project must be a <strong>classical machine learning project</strong> using <strong>real-world data</strong> (not pre-solved Kaggle competitions or overused tutorial datasets like Titanic/MNIST). Apply techniques learned in the course: regression, classification, clustering, or deep learning with proper methodology including data cleaning, exploratory analysis, model selection, and evaluation.</p>
+      
+      <h4>⚠️ Academic Integrity</h4>
+      <p><strong>Plagiarism will result in immediate failure.</strong> All projects are individual - no code sharing between students. You must cite all external code sources, list AI tools used (ChatGPT, Copilot) in the appendix, properly reference your dataset origin, and write the report in your own words.</p>
+      
+      <h4>💡 What Makes a Good Project</h4>
+      <p>Choose a problem with real impact: predict housing prices with feature engineering, classify customer churn, analyze financial sentiment, forecast energy consumption, or tackle a domain-specific classification problem. Your project should demonstrate both technical skill and practical insight.</p>
+      
+      <h4>❌ What to Avoid</h4>
+      <p>Do not submit projects using overused datasets (Titanic, Iris, MNIST without innovation), Kaggle competitions with public solutions, purely theoretical work without implementation, or direct replications of course exercises. Projects must go beyond basic statistics to include genuine machine learning techniques.</p>
+    </div>
+  </section>
+
+  <!-- Project Requirements Section -->
+  <section class="projects-section">
+    <h3 class="section-title">Project Structure</h3>
     <div class="selection-intro">
-      <p><strong>All projects are individual.</strong> You can either propose your own data science topic (recommended) OR request one of the challenging software engineering templates below.</p>
+      <p><strong>All projects are individual.</strong> You must propose and carry out a data science project that demonstrates mastery of course content.</p>
     </div>
     
-    <h4>Free-Topic Project (Recommended)</h4>
+    <h4>Mandatory Report Sections</h4>
     <div class="solo-project-item">
       <div class="solo-header">
         <div class="solo-icon">📊</div>
         <div class="solo-info">
-          <h4>Choose Your Own Data Science Adventure</h4>
-          <span class="solo-badge">Individual Project</span>
+          <h4>Research Paper Structure</h4>
+          <span class="solo-badge">8 Required Sections</span>
         </div>
       </div>
       
-      <p class="solo-description">Design and implement your own data science project. This is the recommended option for most students.</p>
+      <p class="solo-description">Your report must contain these 8 mandatory sections in SIAM conference style:</p>
       
       <div class="solo-requirements">
-        <h5>Requirements</h5>
-        <ul>
-          <li><strong>Individual work:</strong> All projects are solo</li>
-          <li><strong>Proposal required:</strong> 200-word proposal by November 3</li>
-          <li><strong>Data science focus:</strong> Should involve real data analysis, ML, or statistics</li>
-          <li><strong>Python implementation:</strong> Must demonstrate programming concepts from the course</li>
-          <li><strong>Original work:</strong> Cannot reuse projects from other courses</li>
-          <li><strong>Be creative:</strong> Don't just submit the first idea ChatGPT suggests - develop your own unique angle</li>
-        </ul>
+        <h5>Required Sections</h5>
+        <ol>
+          <li><strong>Abstract:</strong> Summary of the project and findings</li>
+          <li><strong>Introduction:</strong> Context and motivation</li>
+          <li><strong>Research Question & Literature:</strong> Problem statement and relevant work</li>
+          <li><strong>Methodology:</strong> ML/statistical methods applied</li>
+          <li><strong>Data Description:</strong> Source, cleaning, preprocessing (dataset must be submitted)</li>
+          <li><strong>Implementation:</strong> Code discussion and architecture</li>
+          <li><strong>Results:</strong> Findings and analysis</li>
+          <li><strong>Conclusion:</strong> Summary and future work</li>
+          <li><strong>Appendix:</strong> List of helper tools (ChatGPT, Copilot, etc.)</li>
+        </ol>
       </div>
       
-      <div class="solo-actions">
-        <a href="{{ '/INDIVIDUAL_PROJECT_RULES/' | relative_url }}" class="project-link">📝 Full Guidelines</a>
-        <a href="mailto:anna.smirnova@unil.ch" class="project-link">✉️ Contact for Questions</a>
-      </div>
     </div>
   </section>
 
-  <!-- Optional Template Projects -->
+  <!-- Important Deadlines -->
   <section class="projects-section">
-    <h3 class="section-title">Optional Template Projects (Advanced Software Engineering)</h3>
-    <p style="color: var(--text-secondary); margin-bottom: 1rem;">⚠️ These templates are significantly more challenging and focus on software engineering rather than data science. Available on first-come first-serve basis with instructor approval.</p>
+    <h3 class="section-title">Important Deadlines & Submission</h3>
     <div class="template-projects-grid">
-      {% assign template_projects = site.projects | where_exp: "project", "project.project_id != 'SOLO'" | sort: "difficulty" %}
-      {% for project in template_projects %}
-      <a href="{{ project.url | relative_url }}" class="project-option-item project-card-link template-coming-soon">
+      <div class="project-option-item">
         <div class="project-header">
-          <div class="project-id-badge">{{ project.project_id }}</div>
-          <div class="project-id-badge coming-soon">COMING SOON</div>
+          <div class="project-id-badge" style="background: #ef4444;">⚠️ DEADLINE</div>
         </div>
         
-        <h4>{{ project.title | escape }}</h4>
-        <p class="focus-area">{{ project.focus_area }}</p>
-        <p class="project-summary">{{ project.summary }}</p>
+        <h4>Proposal Submission</h4>
+        <p class="focus-area">Monday, November 10, 2025</p>
+        <p class="project-summary">Submit a 200-word proposal describing your project idea to the TAs for approval.</p>
         
         <div class="project-details">
           <div class="team-info">
-            <strong>Type:</strong> Individual (Template)
+            <strong>Requirements:</strong> Brief description of data source, methodology, and expected outcomes
           </div>
-          
-          {% if project.technologies %}
-          <div class="tech-stack">
-            <strong>Technologies:</strong>
-            <div class="tech-tags">
-              {% for tech in project.technologies limit:3 %}
-              <span class="tech-tag">{{ tech }}</span>
-              {% endfor %}
-              {% if project.technologies.size > 3 %}
-              <span class="tech-more">+{{ project.technologies.size | minus: 3 }} more</span>
-              {% endif %}
-            </div>
-          </div>
-          {% endif %}
+        </div>
+      </div>
+      
+      <div class="project-option-item">
+        <div class="project-header">
+          <div class="project-id-badge" style="background: #ef4444;">⚠️ DEADLINE</div>
         </div>
         
-        {% if project.template_repo %}
-        <div class="project-actions">
-          <span class="project-link" data-href="{{ project.template_repo }}" onclick="event.preventDefault(); event.stopPropagation(); window.open(this.dataset.href, '_blank');">📁 Template Repo →</span>
+        <h4>Final Submission</h4>
+        <p class="focus-area">Sunday, December 21, 2025 at 23:59</p>
+        <p class="project-summary">Submit all deliverables via email to TAs. No late submissions accepted!</p>
+        
+        <div class="project-details">
+          <div class="team-info">
+            <strong>Required Deliverables:</strong>
+            <ul style="margin: 0.5rem 0 0 1rem; padding-left: 0; font-size: 0.8rem;">
+              <li>• PDF report (8-10 pages in SIAM style)</li>
+              <li>• Source code (all Python files)</li>
+              <li>• Dataset used for analysis</li>
+              <li>• 15-minute video presentation</li>
+            </ul>
+          </div>
         </div>
-        {% endif %}
-      </a>
-      {% endfor %}
+      </div>
+      
+      <div class="project-option-item">
+        <div class="project-header">
+          <div class="project-id-badge" style="background: #10b981;">✓ POLICY</div>
+        </div>
+        
+        <h4>No Significant Results Policy</h4>
+        <p class="focus-area">Full marks still possible</p>
+        <p class="project-summary">Projects can receive full marks even if hypothesis fails, as long as the story is well-told and methodology is sound.</p>
+        
+        <div class="project-details">
+          <div class="team-info">
+            <strong>Note:</strong> We encourage scholarly behavior over rigged data
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1071,6 +1062,38 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .format-requirements li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Project Guidelines - Simple Style */
+.project-guidelines {
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-guidelines h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.25rem 0 0.5rem 0;
+}
+
+.project-guidelines h4:first-child {
+  margin-top: 0;
+}
+
+.project-guidelines p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 0.5rem 0;
+}
+
+.project-guidelines strong {
   color: var(--text-primary);
   font-weight: 600;
 }

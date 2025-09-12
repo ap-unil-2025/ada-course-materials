@@ -33,24 +33,24 @@ layout: default
     <div class="current-content">
       <span class="current-label">NOW</span>
       <div class="current-info">
-        <h2>Week 0-1: Course Overview</h2>
-        <p>Setup • Unix/Linux • Git</p>
+        <h2>Week 1: Introduction to ML</h2>
+        <p>Machine Learning Basics • Nuvolos Setup</p>
       </div>
     </div>
-    <a href="{{ '/week/week00' | relative_url }}" class="current-btn">Open Week 0 →</a>
+    <a href="{{ '/week/week01' | relative_url }}" class="current-btn">Open Week 1 →</a>
   </div>
 
   <section class="course-section">
-    <h3 class="section-title">Part I: Python Foundations</h3>
+    <h3 class="section-title">Part I: Foundations & Python</h3>
     <div class="week-grid">
       
-      <a href="{{ '/week/week00' | relative_url }}" class="week-item current">
+      <a href="{{ '/week/week01' | relative_url }}" class="week-item current">
         <div class="week-header">
-          <span class="week-num">0-1</span>
+          <span class="week-num">1</span>
           <span class="week-date">Sep 15</span>
         </div>
-        <h4>Course Overview</h4>
-        <p>Setup • Unix/Linux • Git</p>
+        <h4>Introduction to ML</h4>
+        <p>Machine Learning • Nuvolos Setup</p>
       </a>
 
       <a href="{{ '/week/week02' | relative_url }}" class="week-item holiday">
@@ -58,7 +58,7 @@ layout: default
           <span class="week-num">2</span>
           <span class="week-date">Sep 22</span>
         </div>
-        <h4>No Class</h4>
+        <h4>No Class - Holiday</h4>
         <p>Swiss Federal Fast</p>
       </a>
 
@@ -67,8 +67,8 @@ layout: default
           <span class="week-num">3</span>
           <span class="week-date">Sep 29</span>
         </div>
-        <h4>Python Fundamentals I</h4>
-        <p>Variables • Control flow • Strings • Git</p>
+        <h4>Python Crash Course</h4>
+        <p>Python • Jupyter • NumPy • SciPy • GitHub</p>
       </a>
 
       <a href="{{ '/week/week04' | relative_url }}" class="week-item">
@@ -76,8 +76,8 @@ layout: default
           <span class="week-num">4</span>
           <span class="week-date">Oct 6</span>
         </div>
-        <h4>Python Fundamentals II</h4>
-        <p>Functions • Data structures • Recursion</p>
+        <h4>Supervised Learning - Regression</h4>
+        <p>Linear/Polynomial Regression • Gradient Descent</p>
       </a>
 
       <a href="{{ '/week/week05' | relative_url }}" class="week-item special">
@@ -85,8 +85,8 @@ layout: default
           <span class="week-num">5</span>
           <span class="week-date">Oct 13</span>
         </div>
-        <h4>Special Session: Generative AI</h4>
-        <p>LLMs • Autonomous agents (Anna)</p>
+        <h4>Generative AI & LLMs</h4>
+        <p>Programming with AI • Autonomous Agents</p>
       </a>
 
       <a href="{{ '/week/week06' | relative_url }}" class="week-item">
@@ -94,15 +94,15 @@ layout: default
           <span class="week-num">6</span>
           <span class="week-date">Oct 20</span>
         </div>
-        <h4>Python Fundamentals III</h4>
-        <p>OOP • Classes • Inheritance • Testing</p>
+        <h4>Supervised Learning - Classification</h4>
+        <p>k-NN • Naive Bayes • Decision Trees • Boosting</p>
       </a>
       
     </div>
   </section>
 
   <section class="course-section">
-    <h3 class="section-title">Part II: Statistical Learning</h3>
+    <h3 class="section-title">Part II: Deep Learning & Neural Networks</h3>
     <div class="week-grid">
       
       <a href="{{ '/week/week07' | relative_url }}" class="week-item">
@@ -110,8 +110,8 @@ layout: default
           <span class="week-num">7</span>
           <span class="week-date">Oct 27</span>
         </div>
-        <h4>Linear Regression</h4>
-        <p>Supervised Learning • Gradient Descent</p>
+        <h4>Deep Learning Basics</h4>
+        <p>MLPs • Feed-forward • SGD • Backpropagation</p>
       </a>
 
       <a href="{{ '/week/week08' | relative_url }}" class="week-item">
@@ -119,8 +119,8 @@ layout: default
           <span class="week-num">8</span>
           <span class="week-date">Nov 3</span>
         </div>
-        <h4>Classification</h4>
-        <p>k-NN • Naive Bayes • Decision Trees</p>
+        <h4>Advanced Deep Learning</h4>
+        <p>TensorFlow • PyTorch • RNNs • LSTMs</p>
       </a>
 
       <a href="{{ '/week/week09' | relative_url }}" class="week-item">
@@ -128,8 +128,8 @@ layout: default
           <span class="week-num">9</span>
           <span class="week-date">Nov 10</span>
         </div>
-        <h4>Unsupervised Machine Learning</h4>
-        <p>k-Means • GMM • PCA • Clustering</p>
+        <h4>Recap Week</h4>
+        <p>Review All Concepts • Q&A • NLP Applications</p>
       </a>
 
       <a href="{{ '/week/week10' | relative_url }}" class="week-item">
@@ -137,8 +137,8 @@ layout: default
           <span class="week-num">10</span>
           <span class="week-date">Nov 17</span>
         </div>
-        <h4>Deep Learning Primer</h4>
-        <p>MLPs • Backpropagation • TensorFlow</p>
+        <h4>Gaussian Processes</h4>
+        <p>GP Regression • Kernels • Option Pricing</p>
       </a>
       
     </div>
@@ -153,8 +153,8 @@ layout: default
           <span class="week-num">11</span>
           <span class="week-date">Nov 24</span>
         </div>
-        <h4>Best Practices in Data Science</h4>
-        <p>Libraries • EDA • Feature Engineering</p>
+        <h4>Dimensionality & Active Learning</h4>
+        <p>Curse of Dimensionality • PCA • Active Subspaces</p>
       </a>
 
       <a href="{{ '/week/week12' | relative_url }}" class="week-item">
@@ -162,8 +162,8 @@ layout: default
           <span class="week-num">12</span>
           <span class="week-date">Dec 1</span>
         </div>
-        <h4>Introduction to HPC</h4>
-        <p>Shared/Distributed Memory • Parallelization</p>
+        <h4>Unsupervised Learning</h4>
+        <p>k-Means • GMM • EM • Hierarchical/DBSCAN</p>
       </a>
 
       <a href="{{ '/week/week13' | relative_url }}" class="week-item project">
@@ -171,8 +171,8 @@ layout: default
           <span class="week-num">13</span>
           <span class="week-date">Dec 8</span>
         </div>
-        <h4>HPC with Python</h4>
-        <p>Numba • JAX • Multi-threading</p>
+        <h4>Reinforcement Learning</h4>
+        <p>RL Intro • Q-Learning • Portfolio Optimization</p>
       </a>
 
       <a href="{{ '/week/week14' | relative_url }}" class="week-item project">
@@ -180,8 +180,8 @@ layout: default
           <span class="week-num">14</span>
           <span class="week-date">Dec 15</span>
         </div>
-        <h4>Capstone Project Presentations</h4>
-        <p>Final presentations • Course wrap-up</p>
+        <h4>Applications & Wrap-up</h4>
+        <p>Deep Uncertainty Quantification • Projects</p>
       </a>
       
     </div>

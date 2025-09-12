@@ -1,42 +1,60 @@
 ---
-title: "Week 5: Generative AI"
+title: "Week 5: Programming with Generative AI"
 date: 2025-10-13
-description: "LLMs, prompt engineering, and autonomous agents"
-lecture_slides: "#"
-ta_slides: "/course-materials/slides/practice/week05_slides.html"
-lesson: "/course-materials/lessons/week05-lesson.html"
+description: "Dedicated hands-on session on programming with Generative AI (LLMs) and autonomous agents"
+lecture_slides: 
+  - title: "Lecture slides, week 5"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_5/slides/Advanced_Data_Analytics_2025_lecture_5.pdf"
+ta_slides: []
 assignment:
-  title: "AI-Assisted Programming Project"
+  title: "No Assignment"
   link: "#"
-  description: "Build a project using LLMs and prompt engineering techniques"
+  description: "Intermezzo week - focus on generative AI session"
 examples:
-  - title: "LLM Integration Examples"
-    link: "https://github.com/ap-unil-2025/course-materials"
+  - title: "Programming with Generative AI Session"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_5/"
 references:
-  - title: "OpenAI API Documentation"
-    link: "https://platform.openai.com/docs"
-    description: "Official OpenAI API guide"
-  - title: "Prompt Engineering Guide"
-    link: "https://www.promptingguide.ai/"
-    description: "Comprehensive prompt engineering techniques"
-  - title: "LangChain Documentation"
-    link: "https://python.langchain.com/"
-    description: "Framework for building LLM applications"
+  - title: "Generative AI Session Materials"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_5/slides/Advanced_Data_Analytics_2025_lecture_5.pdf"
+    description: "Hands-on session on programming with Generative AI (LLMs) and autonomous agents, taught by Anna Smirnova"
 ---
 
-## Week Overview
+## Week 5: Programming with Generative AI
 
-This week's materials include lecture content, practice exercises, and assignments designed to build your understanding of the covered topics.
+### Learning Objectives
+- Understand how to leverage Large Language Models (LLMs) for programming tasks
+- Learn best practices for prompt engineering in coding contexts
+- Explore autonomous agents and their applications
+- Develop skills in AI-assisted programming workflows
+- Apply generative AI tools to data science and machine learning projects
 
-### Getting Started
+### Session Overview
+This week features a **dedicated hands-on session** taught by **Anna Smirnova**, focusing on practical applications of generative AI in programming and data analysis.
 
-1. Review the lesson guide for detailed explanations
-2. Go through the practice slides for hands-on examples  
-3. Complete the weekly assignment
-4. Use the course repository for additional examples and resources
+### Topics Covered
+- **Introduction to LLMs**: Understanding capabilities and limitations
+- **Prompt Engineering**: Crafting effective prompts for coding tasks
+- **AI-Assisted Programming**: Best practices and workflows
+- **Autonomous Agents**: Introduction to AI agents and their applications
+- **Code Generation**: Using AI for writing and debugging code
+- **Data Science Applications**: AI tools for data analysis and visualization
 
-### Need Help?
+### Schedule
+- **Special Session**: Monday, October 13, 2025 (10:15 - 12:00)
+- **Hands-on Workshop**: Monday, October 13, 2025 (16:30 - 18:00)
 
-- Check the course discussion forum
-- Attend office hours
-- Review previous week's materials if needed
+### Practical Skills
+- Effective prompt engineering techniques
+- Code review and improvement with AI assistance
+- Debugging strategies using generative AI
+- Documentation generation and code explanation
+- Integration of AI tools into development workflows
+
+### Key Takeaways
+- When and how to use generative AI effectively in programming
+- Limitations and ethical considerations
+- Quality control and validation of AI-generated code
+- Building efficient AI-assisted development practices
+
+### Assignment
+No formal assignment this week - focus on exploring and experimenting with the tools and techniques presented in the session.
