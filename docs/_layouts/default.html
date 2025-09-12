@@ -8,6 +8,14 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="{{ '/favicon-32x32.svg' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.svg' | relative_url }}">
+    <link rel="mask-icon" href="{{ '/favicon.svg' | relative_url }}" color="#003aff">
+    <meta name="theme-color" content="#003aff">
+    
     {% seo %}
 </head>
 <body>
