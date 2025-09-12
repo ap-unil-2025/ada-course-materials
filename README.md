@@ -1,6 +1,6 @@
 # ADA Course Materials Website
 
-This repository contains the source files for the Applied Data Analysis course website.
+This repository contains the source files for the Advanced Data Analytics course website.
 
 The website is automatically built and deployed using GitHub Pages.
 
