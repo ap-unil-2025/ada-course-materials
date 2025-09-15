@@ -473,36 +473,13 @@ layout: default
 <script>
 // Week availability checker - works with AJAX navigation
 (function() {
-  let futureContentAvailable = false;
-  
-  // Check if future content is available by testing a future week
-  function checkFutureContentAvailability() {
-    // Test if Week 14 (far future) page exists
-    const testUrl = '{{ "/week/week14" | relative_url }}';
-    
-    return fetch(testUrl, { method: 'HEAD' })
-      .then(response => {
-        futureContentAvailable = response.ok;
-        console.log('Future content available:', futureContentAvailable);
-      })
-      .catch(() => {
-        futureContentAvailable = false;
-      });
-  }
-  
   function disableFutureWeeks() {
-    // If future content is available (built with --future), don't disable anything
-    if (futureContentAvailable) {
-      console.log('Site built with --future flag, all weeks accessible');
-      return;
-    }
     
     const today = new Date();
     today.setHours(0, 0, 0, 0);
     
     // Week dates mapping - same dates as in Jekyll front matter
     const weekDates = {
-      'week00': new Date('2025-09-15'),
       'week01': new Date('2025-09-15'),
       'week02': new Date('2025-09-22'),
       'week03': new Date('2025-09-29'),
@@ -533,7 +510,10 @@ layout: default
       
       if (!weekDate) return;
       
-      // If the week is in the future (including holidays), disable it
+      weekDate.setHours(0, 0, 0, 0);
+      
+      // If the week is in the future (not started yet), disable it
+      // Week is available on or after its start date
       if (weekDate > today) {
         item.classList.add('disabled');
         item.style.pointerEvents = 'none';
@@ -553,21 +533,29 @@ layout: default
           overlay.textContent = 'soon';
           item.appendChild(overlay);
         }
+      } else {
+        // Week is current or past - make sure it's enabled
+        item.classList.remove('disabled');
+        item.style.pointerEvents = '';
+        item.style.cursor = '';
+        item.onclick = null;
+        
+        // Remove coming soon overlay if it exists
+        const overlay = item.querySelector('.coming-soon-overlay');
+        if (overlay) {
+          overlay.remove();
+        }
       }
     });
   }
   
-  // Check future content availability, then run
-  checkFutureContentAvailability().then(() => {
-    disableFutureWeeks();
-  });
+  // Run immediately
+  disableFutureWeeks();
   
   // Run on DOMContentLoaded (for full page loads)
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
-      checkFutureContentAvailability().then(() => {
-        disableFutureWeeks();
-      });
+      disableFutureWeeks();
     });
   }
   
@@ -580,11 +568,9 @@ layout: default
                              (mutation.target.querySelector('.week-item') ||
                               mutation.target.classList && mutation.target.classList.contains('week-item'));
         if (hasWeekItems) {
-          // Re-check future content availability in case of navigation
+          // Re-run after navigation
           setTimeout(() => {
-            checkFutureContentAvailability().then(() => {
-              disableFutureWeeks();
-            });
+            disableFutureWeeks();
           }, 10);
           break;
         }
