@@ -37,6 +37,7 @@ layout: default
       <div class="course-info">
         <h2>Advanced Data Analytics</h2>
         <p>Machine Learning for Economics & Finance</p>
+        <p style="margin-top: 0.5rem;"><a href="{{ '/professor-syllabus' | relative_url }}" style="color: rgba(255,255,255,0.95); text-decoration: underline; font-size: 0.85rem;">📋 Professor's Syllabus</a></p>
       </div>
     </div>
     <a href="{{ '/weekly-materials' | relative_url }}" class="course-btn">View Materials →</a>
@@ -600,11 +601,11 @@ layout: default
     text-align: center;
     gap: 1rem;
   }
-  
+
   .course-content {
     flex-direction: column;
   }
-  
+
   .info-grid,
   .skills-grid,
   .assessment-grid,
@@ -613,13 +614,13 @@ layout: default
   .schedule-parts {
     grid-template-columns: 1fr;
   }
-  
+
   .part-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
-  
+
   .part-header h4 {
     text-align: left;
   }
