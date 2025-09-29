@@ -51,6 +51,15 @@ jobs:
           chmod +x sync-content.sh
           ./sync-content.sh
 
+      - name: Verify submodule files
+        run: |
+          echo "📚 Verifying submodule files are present..."
+          echo "Checking for lecture 3 slides:"
+          ls -la docs/advanced_data_analytics_2025/lectures/lecture_3/slides/ || echo "ERROR: Lecture 3 slides not found!"
+          echo "Total PDF count in submodule:"
+          find docs/advanced_data_analytics_2025 -name "*.pdf" | wc -l
+          echo "✅ Submodule verification complete"
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -65,7 +74,10 @@ jobs:
       - name: Build with Jekyll
         run: |
           cd docs
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          echo "Building Jekyll site with baseurl: ${{ steps.pages.outputs.base_path }}"
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --verbose
+          echo "Checking if submodule files are in _site:"
+          ls -la _site/advanced_data_analytics_2025/lectures/lecture_3/slides/ || echo "ERROR: Lecture 3 slides not in _site!"
         env:
           JEKYLL_ENV: production
 

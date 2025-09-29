@@ -20,9 +20,10 @@ plugins:
 keep_files:
   - assets/templates/project_report_template.md
 
-# Include markdown templates in the build
+# Include markdown templates and submodule files in the build
 include:
   - assets/templates/project_report_template.md
+  - advanced_data_analytics_2025
 
 # Keep your existing TOC settings
 toc:
