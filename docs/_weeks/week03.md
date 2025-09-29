@@ -6,7 +6,7 @@ lecture_slides:
   - title: "A crash course on Programming in Python"
     link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_3/slides/Advanced_Data_Analytics_2025_lecture3a.pdf"
   - title: "A brief introduction to GitHub (quick tour; self-study)"
-    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_3/slides/Advanced_Data_Analytics_2025_lecture_3b.pdf"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_3/slides/Advanced_Data_Analytics_2025_lecture3b.pdf"
 ta_slides: 
   - title: "Finger exercises (at the end of the lecture; self-study)"
     link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_3/Finger_exercises/finger_exercises_lecture_3.pdf"
@@ -23,7 +23,7 @@ examples:
     link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_3/code_notebooks/introduction_to_scipy.ipynb"
 references:
   - title: "GitHub Quick Tour"
-    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_3/slides/Advanced_Data_Analytics_2025_lecture_3b.pdf"
+    link: "/ada-course-materials/advanced_data_analytics_2025/lectures/lecture_3/slides/Advanced_Data_Analytics_2025_lecture3b.pdf"
     description: "Brief introduction to GitHub"
 ---
 
