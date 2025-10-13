@@ -38,11 +38,7 @@ jobs:
       - name: Update submodules to latest
         run: |
           echo "📚 Updating submodules to latest commits..."
-          git submodule update --init --recursive --remote --merge
-          cd docs/advanced_data_analytics_2025
-          git fetch origin
-          git checkout origin/main || git checkout origin/master
-          cd ../..
+          git submodule update --init --recursive --remote
           echo "✅ Submodules updated to latest"
 
       - name: Sync content to Jekyll collections
