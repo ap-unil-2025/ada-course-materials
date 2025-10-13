@@ -4,7 +4,7 @@ date: 2025-10-13
 description: "Large Language Models, Autonomous Agents, and AI-Assisted Programming"
 lecture_slides:
   - title: "Guest Lecture: Generative AI for Programming"
-    link: "/ada-course-materials/slides/practice/week05_slides.html"
+    link: "https://ap-unil-2025.github.io/course-materials/slides/practice/week05_slides.html"
 ta_slides: "#"
 assignment:
   title: "TBA"
@@ -27,7 +27,7 @@ references:
 ## Week 5: Guest Lecture - Generative AI for Programming
 
 ### Guest Lecturer
-**Anna Smirnova** - PhD Candidate, DSAP Lab, EPFL
+**Anna Smirnova** - PhD Candidate
 
 ### Learning Objectives
 - Understand the landscape of AI tools for programming (chatbots, assistants, agents)
