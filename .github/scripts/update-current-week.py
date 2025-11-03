@@ -74,10 +74,52 @@ def update_index_file(file_path, current_week):
 
     return True
 
+def update_weekly_materials_file(file_path, current_week):
+    """Update the weekly-materials.md file with current week information."""
+
+    with open(file_path, 'r') as f:
+        content = f.read()
+
+    # Pattern to match the current week banner section (h2 and p)
+    pattern_info = r'(<div class="current-info">[\s\S]*?<h2>)(Week [^<]+)(<\/h2>[\s\S]*?<p>)([^<]+)(<\/p>)'
+
+    # Build replacement string for info section
+    replacement_info = (
+        r'\1Week {}: {}\3{}\5'.format(
+            current_week["week"],
+            current_week["title"].split(' - ')[0] if ' - ' in current_week["title"] else current_week["title"],  # Shorten title if needed
+            current_week["topics"]
+        )
+    )
+
+    # Perform replacement for info section
+    updated_content = re.sub(pattern_info, replacement_info, content)
+
+    # Pattern to match the link button
+    week_num_padded = current_week["week"].zfill(2)  # Pad to 2 digits (e.g., "8" -> "08")
+    pattern_link = r'(<a href="{{ \'/week/week)\d+(.*?class="current-btn">Open Week )\d+( →<\/a>)'
+
+    replacement_link = r'\g<1>{}\g<2>{}\g<3>'.format(week_num_padded, current_week["week"])
+
+    # Perform replacement for link
+    updated_content = re.sub(pattern_link, replacement_link, updated_content)
+
+    # Check if replacement was made
+    if updated_content == content:
+        print("⚠️  Warning: No changes made to weekly-materials.md. Pattern might not match.")
+        return False
+
+    # Write updated content
+    with open(file_path, 'w') as f:
+        f.write(updated_content)
+
+    return True
+
 def main():
     # Get repository root (assuming script is in .github/scripts/)
     repo_root = Path(__file__).parent.parent.parent
     index_path = repo_root / "docs" / "index.html"
+    weekly_materials_path = repo_root / "docs" / "weekly-materials.md"
 
     if not index_path.exists():
         print(f"❌ Error: {index_path} not found")
@@ -89,10 +131,24 @@ def main():
     print(f"   Topics: {current_week['topics']}")
 
     # Update index file
+    success = True
     if update_index_file(index_path, current_week):
         print(f"✅ Successfully updated index.html")
     else:
         print(f"❌ Failed to update index.html")
+        success = False
+
+    # Update weekly materials file
+    if weekly_materials_path.exists():
+        if update_weekly_materials_file(weekly_materials_path, current_week):
+            print(f"✅ Successfully updated weekly-materials.md")
+        else:
+            print(f"❌ Failed to update weekly-materials.md")
+            success = False
+    else:
+        print(f"⚠️  Warning: {weekly_materials_path} not found, skipping")
+
+    if not success:
         sys.exit(1)
 
 if __name__ == "__main__":
