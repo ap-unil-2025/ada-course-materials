@@ -33,11 +33,11 @@ layout: default
     <div class="current-content">
       <span class="current-label">NOW</span>
       <div class="current-info">
-        <h2>Week 8: Tensorflow/PyTorch, RNNs, LSTMs</h2>
-        <p>Deep Learning Frameworks • Sequence Models</p>
+        <h2>Week 9: Recap Week</h2>
+        <p>Review • Q&A • Practice</p>
       </div>
     </div>
-    <a href="{{ '/week/week08' | relative_url }}" class="current-btn">Open Week 8 →</a>
+    <a href="{{ '/week/week09' | relative_url }}" class="current-btn">Open Week 9 →</a>
   </div>
 
   <section class="course-section">
