@@ -33,11 +33,11 @@ layout: default
     <div class="current-content">
       <span class="current-label">NOW</span>
       <div class="current-info">
-        <h2>Week 10: Gaussian Processes</h2>
-        <p>Probabilistic Models • Uncertainty</p>
+        <h2>Week 11: Dimensionality Reduction, PCA, Active Learning</h2>
+        <p>Feature Reduction • Active Learning</p>
       </div>
     </div>
-    <a href="{{ '/week/week10' | relative_url }}" class="current-btn">Open Week 10 →</a>
+    <a href="{{ '/week/week11' | relative_url }}" class="current-btn">Open Week 11 →</a>
   </div>
 
   <section class="course-section">
