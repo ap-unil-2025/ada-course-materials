@@ -33,11 +33,11 @@ layout: default
     <div class="current-content">
       <span class="current-label">NOW</span>
       <div class="current-info">
-        <h2>Week 11: Dimensionality Reduction, PCA, Active Learning</h2>
-        <p>Feature Reduction • Active Learning</p>
+        <h2>Week 12: Clustering</h2>
+        <p>k-means • GMM • Hierarchical</p>
       </div>
     </div>
-    <a href="{{ '/week/week11' | relative_url }}" class="current-btn">Open Week 11 →</a>
+    <a href="{{ '/week/week12' | relative_url }}" class="current-btn">Open Week 12 →</a>
   </div>
 
   <section class="course-section">
