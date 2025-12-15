@@ -33,11 +33,11 @@ layout: default
     <div class="current-content">
       <span class="current-label">NOW</span>
       <div class="current-info">
-        <h2>Week 13: Reinforcement Learning</h2>
-        <p>RL Basics • Q-Learning • Policy Gradient</p>
+        <h2>Week 14: Wrap-up and project presentations</h2>
+        <p>Final Projects • Presentations</p>
       </div>
     </div>
-    <a href="{{ '/week/week13' | relative_url }}" class="current-btn">Open Week 13 →</a>
+    <a href="{{ '/week/week14' | relative_url }}" class="current-btn">Open Week 14 →</a>
   </div>
 
   <section class="course-section">
